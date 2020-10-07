@@ -12,10 +12,13 @@ def line(deli)
   end
 end
 
+$count = 0
 
-def take_a_number(deli, customer_name)
-  deli.push(customer_name)
-  puts "Welcome, #{customer_name}. You are number #{deli.length} in line."
+def take_a_number(deli)
+  #$count = 0
+  $count += 1
+  deli.push($count)
+  puts "Welcome, #{$count}. You are number #{deli.length} in line."
 end
 
 
